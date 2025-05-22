@@ -1,0 +1,212 @@
+[
+  {
+    "customerId": "CUST-1001",
+    "customerName": "Cynthia Ponce",
+    "email": "tiffany84@sanders.com",
+    "phone": "(462)910-3523",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1002",
+    "customerName": "Carmen Ross",
+    "email": "dcross@hotmail.com",
+    "phone": "210-129-0921x08405",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1003",
+    "customerName": "Sarah Flores",
+    "email": "tracynash@yahoo.com",
+    "phone": "531.414.6468x0844",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1004",
+    "customerName": "Daniel Delgado",
+    "email": "amandabolton@gmail.com",
+    "phone": "4686765012",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1005",
+    "customerName": "Mike Stevens",
+    "email": "oromero@yahoo.com",
+    "phone": "+1-224-356-8524x309",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1006",
+    "customerName": "Dr. Melissa Rodriguez",
+    "email": "michaeltorres@yahoo.com",
+    "phone": "001-357-431-5737x819",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1007",
+    "customerName": "Shawn Bowers",
+    "email": "steven46@gmail.com",
+    "phone": "001-167-022-4976x6065",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1008",
+    "customerName": "Michelle Rocha",
+    "email": "saundersmelinda@yahoo.com",
+    "phone": "001-519-574-0424x019",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1009",
+    "customerName": "Eugene Bowman",
+    "email": "brownjessica@hotmail.com",
+    "phone": "8282401130",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1010",
+    "customerName": "Denise Rodriguez",
+    "email": "millstodd@johnson-green.com",
+    "phone": "(531)009-9840",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1011",
+    "customerName": "Wesley Taylor",
+    "email": "joann93@schmidt-andrews.com",
+    "phone": "(551)609-8719x44194",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1012",
+    "customerName": "Kimberly Shepard",
+    "email": "ashleysutton@yahoo.com",
+    "phone": "319.236.9637x63362",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1013",
+    "customerName": "Stephanie Erickson",
+    "email": "heathnathaniel@brooks.com",
+    "phone": "001-061-671-2971",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1014",
+    "customerName": "Sean Rose",
+    "email": "vazquezleslie@hotmail.com",
+    "phone": "217-178-3964",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1015",
+    "customerName": "Tyler Barrett",
+    "email": "martinmark@yahoo.com",
+    "phone": "(539)403-2430x138",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1016",
+    "customerName": "Karla Phillips",
+    "email": "hbrown@baldwin.com",
+    "phone": "(542)038-3172x38398",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1017",
+    "customerName": "Tanner Nguyen",
+    "email": "gomezshaun@gmail.com",
+    "phone": "080.912.6439",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1018",
+    "customerName": "Crystal Stout",
+    "email": "stevenmiller@gmail.com",
+    "phone": "+1-416-986-5586",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1019",
+    "customerName": "Jonathan Blackburn",
+    "email": "ehernandez@crane-wilson.org",
+    "phone": "5324672162",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1020",
+    "customerName": "Nathan Bell",
+    "email": "jennifer65@yahoo.com",
+    "phone": "131.116.8921x70164",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1021",
+    "customerName": "Jon Ward",
+    "email": "alexandra16@tran.info",
+    "phone": "986.667.6867x3644",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1022",
+    "customerName": "George Boyd",
+    "email": "butlerleah@hotmail.com",
+    "phone": "589.694.1112x76037",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1023",
+    "customerName": "Brent Whitaker",
+    "email": "zdrake@holmes.biz",
+    "phone": "0096240668",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1024",
+    "customerName": "Garrett Cardenas",
+    "email": "tanyaharris@hotmail.com",
+    "phone": "+1-163-761-2999x992",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1025",
+    "customerName": "Joshua Rice",
+    "email": "jonathan84@williams-anderson.com",
+    "phone": "579-329-9076",
+    "loyalty": "Silver"
+  },
+  {
+    "customerId": "CUST-1026",
+    "customerName": "Andrew Barnett",
+    "email": "alexis57@rhodes-torres.org",
+    "phone": "782.311.4191x81306",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1027",
+    "customerName": "Carol Clayton",
+    "email": "jamesjohnson@hotmail.com",
+    "phone": "+1-964-323-5537x2832",
+    "loyalty": "Gold"
+  },
+  {
+    "customerId": "CUST-1028",
+    "customerName": "Paul Wilson",
+    "email": "maddoxelizabeth@gmail.com",
+    "phone": "706.257.5158x5350",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1029",
+    "customerName": "Jeremy Brown",
+    "email": "smithnathan@yahoo.com",
+    "phone": "(937)365-4822",
+    "loyalty": "Bronze"
+  },
+  {
+    "customerId": "CUST-1030",
+    "customerName": "Walter Pham",
+    "email": "millerjessica@yahoo.com",
+    "phone": "598.708.2354x74939",
+    "loyalty": "Silver"
+  }
+]
