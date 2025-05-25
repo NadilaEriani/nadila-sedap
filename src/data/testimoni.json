@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Rina Ayu",
+    "avatar": "https://avatar.iran.liara.run/public/61",
+    "review": "Makanan sampai cepat, hangat, dan tampilannya bikin ngiler. Sedap benar-benar memudahkan saya menikmati kuliner favorit!"
+  },
+  {
+    "id": 2,
+    "name": "Daniel Surya",
+    "avatar": "https://avatar.iran.liara.run/public/18",
+    "review": "Tampilan aplikasinya rapi dan mudah dipakai. Pesan makanan jadi praktis, tinggal klik langsung sampai!"
+  },
+  {
+    "id": 3,
+    "name": "Sarah Putri",
+    "avatar": "https://avatar.iran.liara.run/public/60",
+    "review": "Aku suka cara Sedap menampilkan menu makanan — fotonya menggoda dan deskripsinya jelas banget!"
+  },
+  {
+    "id": 4,
+    "name": "Yusuf Hamzah",
+    "avatar": "https://avatar.iran.liara.run/public/25",
+    "review": "Pesan makan malam jadi jauh lebih mudah. Banyak pilihan, pengiriman cepat, dan rasa makanannya luar biasa!"
+  },
+  {
+    "id": 5,
+    "name": "Citra Anindya",
+    "avatar": "https://avatar.iran.liara.run/public/55",
+    "review": "Review dari pelanggan lain sangat membantu. Saya jadi lebih yakin sebelum memesan, dan hasilnya tidak mengecewakan!"
+  }
+]
