@@ -7,6 +7,7 @@ import ErrorPage from "./pages/ErrorPage";
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Orders = React.lazy(() => import("./pages/Orders"));
 const Customers = React.lazy(() => import("./pages/Customers"));
+const Product = React.lazy(() => import("./pages/Product"));
 const User = React.lazy(() => import("./pages/User"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 const MainLayout = React.lazy(() => import("./Layouts/MainLayout"));
@@ -17,6 +18,7 @@ const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 const Loading = React.lazy(() => import("./components/Loading"));
 const GuestLayout = React.lazy(() => import("./Layouts/GuestLayout"));
 const Guest = React.lazy(() => import("./pages/Guest"));
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/user" element={<User />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/products/:id" element={<ProductDetail />} /> 
         </Route>
 
         <Route element={<AuthLayout />}>

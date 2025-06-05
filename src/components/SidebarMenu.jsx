@@ -1,3 +1,5 @@
+import { BiFoodMenu } from "react-icons/bi"; 
+
 import { BiUser } from "react-icons/bi"; 
 import { VscError } from "react-icons/vsc"; 
 import { BiErrorAlt } from "react-icons/bi";
@@ -39,6 +41,12 @@ export default function SidebarMenu() {
         <NavLink id="menu-3" to="/customers" className={menuClass}>
           <RiCustomerService2Fill className="mr-4 text-x" />
           <span>Customer</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink id="menu-4" to="/product" className={menuClass}>
+          <BiFoodMenu  className="mr-4 text-x"/>
+          <span>Product</span>
         </NavLink>
       </li>
 
