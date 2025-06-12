@@ -11,6 +11,9 @@ export default function Notes() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  //edit
+  const [isEdit, setIsEdit] = useState(false);
+  const [editId, setEditId] = useState(null);
 
   const [dataForm, setDataForm] = useState({
     title: "",
@@ -29,30 +32,32 @@ export default function Notes() {
   // Handle form submission for creating notes
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       setLoading(true);
       setError("");
       setSuccess("");
 
-      await notesAPI.createNote(dataForm);
+      if (isEdit) {
+        await notesAPI.updateNote(editId, dataForm);
+        setSuccess("Catatan berhasil diperbarui!");
+      } else {
+        await notesAPI.createNote(dataForm);
+        setSuccess("Catatan berhasil ditambahkan!");
+      }
 
-      setSuccess("Catatan berhasil ditambahkan!");
-
-      // Kosongkan Form setelah Success
       setDataForm({ title: "", content: "", status: "" });
+      setIsEdit(false);
+      setEditId(null);
+      loadNotes();
 
-      // Hilangkan pesan Success setelah 3 detik
       setTimeout(() => setSuccess(""), 3000);
-
-      //Panggil Ulang loadNotes untuk refresh data
-      // loadNotes();
     } catch (err) {
       setError(`Terjadi kesalahan: ${err.message}`);
     } finally {
       setLoading(false);
     }
   };
+
   // Load data saat pertama di-render
   useEffect(() => {
     loadNotes();
@@ -92,6 +97,16 @@ export default function Notes() {
     } finally {
       setLoading(false);
     }
+  };
+  //HandleEdit
+  const handleEdit = (note) => {
+    setDataForm({
+      title: note.title,
+      content: note.content,
+      status: note.status || "",
+    });
+    setIsEdit(true);
+    setEditId(note.id);
   };
 
   return (
@@ -139,13 +154,30 @@ export default function Notes() {
           <button
             type="submit"
             className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold
-                        rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500
-                        focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed
-                        transition-all duration-200 shadow-lg"
+             rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500
+             focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed
+             transition-all duration-200 shadow-lg"
           >
-            Tambah Catatan
-            {loading ? "Mohon Tunggu..." : "Tambah Data"}
+            {isEdit ? "Perbarui Catatan" : "Tambah Catatan"}
+            {loading ? " Mohon Tunggu..." : ""}
           </button>
+
+          {/* batal edit */}
+          {isEdit && (
+            <button
+              type="button"
+              onClick={() => {
+                setIsEdit(false);
+                setEditId(null);
+                setDataForm({ title: "", content: "", status: "" });
+              }}
+              className="ml-4 px-6 py-3 bg-red-100 hover:bg-red-200 text-red-700 font-semibold
+             rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-300
+             focus:ring-offset-2 transition-all duration-200"
+            >
+              Batal Edit
+            </button>
+          )}
         </form>
       </div>
       {/* Notes Table */}
@@ -183,10 +215,10 @@ export default function Notes() {
                   <div className="truncate text-gray-600">{note.content}</div>
                 </td>
                 <td className="flex px-6 py-4 max-w-xs">
-                  <button>
-                    <BiEditAlt className="text-blue-400 text-2xl hover:text-blue-600 transition-colors"/>
+                  <button onClick={() => handleEdit(note)}>
+                    <BiEditAlt className="text-blue-400 text-2xl hover:text-blue-600 transition-colors" />
                   </button>
-                  
+
                   <div className="truncate text-gray-600">
                     <button
                       onClick={() => handleDelete(note.id)}
