@@ -182,7 +182,7 @@ export default function Notes() {
                 <td className="px-6 py-4 max-w-xs">
                   <div className="truncate text-gray-600">{note.content}</div>
                 </td>
-                <td className="px-6 py-4 max-w-xs">
+                <td className="flex px-6 py-4 max-w-xs">
                   <button>
                     <BiEditAlt className="text-blue-400 text-2xl hover:text-blue-600 transition-colors"/>
                   </button>
