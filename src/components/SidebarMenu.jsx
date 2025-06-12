@@ -1,3 +1,5 @@
+import { MdFastfood } from "react-icons/md"; 
+
 import { BiFoodMenu } from "react-icons/bi"; 
 
 import { BiUser } from "react-icons/bi"; 
@@ -45,8 +47,14 @@ export default function SidebarMenu() {
       </li>
       <li>
         <NavLink id="menu-4" to="/product" className={menuClass}>
-          <BiFoodMenu  className="mr-4 text-x"/>
+          <MdFastfood className="mr-4 text-x" />
           <span>Product</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink id="menu-5" to="/notes" className={menuClass}>
+          <BiFoodMenu  className="mr-4 text-x"/>
+          <span>Notes</span>
         </NavLink>
       </li>
 
