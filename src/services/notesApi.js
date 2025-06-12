@@ -18,5 +18,9 @@ export const notesAPI = {
     async createNote(data) {
         const response = await axios.post(API_URL, data, { headers })
         return response.data
+    },
+    
+    async deleteNote(id) {
+        await axios.delete(`${API_URL}?id=eq.${id}`, { headers })
     }
 }
