@@ -28,6 +28,10 @@
     src: url(/fonts/Lato-Bold.ttf);
 }
 
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+}
+
 @theme {
     --font-barlow: "Barlow", sans-serif;
     --font-poppins: "Poppins", sans-serif;
